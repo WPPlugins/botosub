@@ -1,0 +1,80 @@
+.botosub-plugin-outer {
+}
+.botosub-plugin-top {
+    position: fixed;
+    top: 0px;
+    left: 0;
+    z-index: 250;
+    width: 100%;
+    min-height: 32px;
+}
+.botosub-plugin-bottom {
+    position: fixed;
+    bottom: 0px;
+    left: 0;
+    z-index: 250;
+    width: 100%;
+    min-height: 32px;
+}
+.botosub-plugin-style {
+    position: relative;
+    z-index: 250;
+    left: 0;
+    font-family: Arial, Helvetica, Verdana, Sans-serif;
+    color: #000;
+    cursor: default;
+    background: #ffcc00;
+    width: 100%;
+    transition: opacity 1s linear;
+    vertical-align: center;
+}
+.botosub-plugin-switch-top {
+    position: fixed;
+    top: 0px;
+    left: 96%;
+    background: rgb(255, 204, 0);
+    color: black;
+    display: inline-block;
+    float: right;
+    margin-right: 12px;
+    cursor: pointer;
+    clear: both;
+    z-index: 500;
+    vertical-align: middle;
+    padding: 0;
+}
+.botosub-plugin-switch-bottom {
+    position: fixed;
+    bottom: 0px;
+    left: 96%;
+    background: rgb(255, 204, 0);
+    color: black;
+    display: inline-block;
+    float: right;
+    margin-right: 12px;
+    cursor: pointer;
+    clear: both;
+    z-index: 500;
+    vertical-align: middle;
+    padding: 0;
+}
+.botosub-plugin-switch {
+    z-index: 1000;
+}
+@media screen and (min-width: 783px) {
+    .admin-plugin .botosub-plugin-top {
+        top: 32px;
+    }
+    .admin-plugin .botosub-plugin-switch-top {
+        top: 31px;
+    }
+}
+@media screen and (min-width: 300px) and (max-width: 600px) {
+    .admin-plugin .botosub-plugin-switch-top {
+        top: 31px;
+        left: 88%;
+    }
+    .botosub-plugin-switch-bottom {
+        left: 88%;
+    }
+}
